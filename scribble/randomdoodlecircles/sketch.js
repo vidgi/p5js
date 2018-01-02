@@ -11,7 +11,7 @@ var g = 50;
 var b = 100;
 
   function draw() {
-        //background(255);
+  //  background(255,255,255,50);
 
     // create an instance of scribble and set a few parameters
     noFill();
@@ -23,7 +23,7 @@ var b = 100;
     strokeWeight(1);
     stroke(random(0, 255), g, b);
    scribble.scribbleEllipse(windowWidth / 2, windowHeight / 2, x, x);
- 
+
    // /*
     noStroke();
     //  stroke(255 );
@@ -33,7 +33,7 @@ var b = 100;
     text('title', windowWidth / 2, (windowHeight / 2) + 40);
     textSize(20);
 
-    text('[ s u b t i t l e ] ', windowWidth / 2, (windowHeight / 2) + 70); 
+    text('[ s u b t i t l e ] ', windowWidth / 2, (windowHeight / 2) + 70);
    // */
-    
+
   }

@@ -4,11 +4,11 @@ var g = 50;
 var b = 100;
 var intcirc = 300;
 var initialscrib=1; //turn on or off initial scrib
-var stk = 0.8;
+var stk = 10;
 
 function setup() {
     var canvas = createCanvas(windowWidth * 0.98, windowHeight * 0.97);
-    frameRate(30)
+    frameRate(15)
     background(255);
     stroke(0);
     strokeWeight(stk);
@@ -20,7 +20,7 @@ for(var i =0; i<intcirc; i++){
     noFill();
     var scribble = new Scribble();
     scribble.bowing = 0.1;
-    scribble.roughness = 5;
+    scribble.roughness = 3;
     // x=random(1,3*windowHeight)
    // x = random(1, 0.75 * windowHeight)
     strokeWeight(stk);
@@ -46,7 +46,7 @@ for(var i =0; i<intcirc; i++){
 
 
   function draw() {
-        //background(255);
+    background(255,255,255,50);
 
     // create an instance of scribble and set a few parameters
     noFill();
