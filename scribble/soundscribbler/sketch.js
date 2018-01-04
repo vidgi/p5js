@@ -2,7 +2,7 @@
 var mic
 function setup() {
     var canvas = createCanvas(windowWidth * 0.98, windowHeight * 0.97);
-    frameRate(15)
+    frameRate(30)
     background(255);
     stroke(0);
     strokeWeight(5);
