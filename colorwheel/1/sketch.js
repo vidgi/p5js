@@ -27,16 +27,16 @@
  */
 
  function draw() {
-// background(255);
+ background(255);
  //bezier(mouseX,mouseY,285,20,285,275,30,275);
 
-//  var from = color(random(255), random(255), random(255),100);
-//  var to = color(random(255), random(255), random(255),100);
-//  colorMode(RGB);
-//  for(var i =0; i<=50; i++){
-//  var val=((50-i)*2)/100;
-//  fill(lerpColor(from, to, val));
-//  rect(windowWidth/2, windowHeight/2, 20+10*(50-i), 20+10*(50-i));
-//  rotate((PI*val/100))
-// }
+ var from = color(random(255), random(255), random(255),100);
+ var to = color(random(255), random(255), random(255),100);
+ colorMode(RGB);
+ for(var i =0; i<=50; i++){
+ var val=((50-i)*2)/100;
+ fill(lerpColor(from, to, val));
+ rect(windowWidth/2, windowHeight/2, 20+10*(50-i), 20+10*(50-i));
+ rotate((PI*val/100))
+}
  }
