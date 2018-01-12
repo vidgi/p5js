@@ -24,14 +24,14 @@
  size=random(1,60);
  //var from = color(218, 165, 32,150);
  //var to = color(72, 61, 139,150);
-  var from = color(random(255), random(255), random(255),255);
+var from = color(random(255), random(255), random(255),255);
  var to = color(random(255), random(255), random(255),255);
  //randomSeed(4);
 
 //arrayWidth=windowWidth;
 //arrayHeight=windowHeight;
 
- arrayWidth=mouseX;
+arrayWidth=mouseX;
 arrayHeight=mouseY;
 
 for(var k =0; k<=(arrayHeight/50); k++){
