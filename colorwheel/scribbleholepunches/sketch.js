@@ -40,7 +40,7 @@ function draw() {
   // var from = color(random(255), random(255), random(255),100);
   //var to = color(random(255), random(255), random(255),100);
   randomSeed(54);
-  var v = createVector(1,0.5,0.5,0.65,0.9,1,1,1,1,1,1,1,1,1,
+  var v = createVector(1,0.5,0.75,1,1,1,1,1,1,1,1,1,1,1,
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,
     1,1,1,1,1,1,1,1,1,1,1,1,1,1,
@@ -65,21 +65,12 @@ function draw() {
     for (var i = 0; i <= (1000 / 50); i++) {
       var val = (i * 5) / 100;
       noFill();
-      stroke(lerpColor(from, to, val));
-      //stroke(0,0,0)
-      // 00 0 11 1 ((k*20)+i)
-      // 10 1 21 2
-      // 20 2 31 3
-      // 30 3 41 4
-      // 01 4 12 5
-      // 11 5
-      // 21 6
-      // 31 7
+    //  stroke(lerpColor(from, to, val));
+      stroke(0,0,0)
+      //counter=(k*3)+(i+1)
+      scribble.scribbleEllipse(random(600), random(600) + 50 * k, 40, 40);
 
-      counter=counter+1
-    //  scribble.scribbleEllipse(random(600), random(600) + 50 * k, 40, 40);
-
-      scribble.scribbleEllipse(xint + i * 50, xint + 50 * k, f[counter]*40, f[counter]*40);
+      //scribble.scribbleEllipse(xint + i * 50, xint + 50 * k, f[counter]*40, f[counter]*40);
       //fill(lerpColor(from, to, val));
     //  ellipse(xint + i * 50, xint + 50 * k, f[counter]*40, f[counter]*40);
       //rotate(PI * ((windowWidth - mouseX) / windowWidth) / 400);
